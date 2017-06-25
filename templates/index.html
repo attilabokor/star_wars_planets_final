@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='static/css/style.css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous" defer></script>
+    <script src='static/script.js' defer></script>
+</head>
+
+<body>
+    
+        
+            
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="/"><kbd>Home</kbd></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register"><kbd>Registration</kbd></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ login_url }}"><kbd> {{ login_button }} </kbd></a>
+        </li>
+    </ul>
+
+    
+    
+    <div class="container">
+        <p id='login_name' name='login_name'><kbd> {{ login_name }}</kbd></p>
+        <h1 class='text-center'>Star Wars Planets</h1>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-group">
+            
+            <table id='planet-table' class="table table-inverse table-bordered">
+                <thead id='planet-table-head'>
+                    <tr>
+                        <th>Name</th>
+                        <th>Diameter</th>
+                        <th>Climate</th>
+                        <th>Gravity</th>
+                        <th>Terrain</th>
+                        <th>Water</th>
+                        <th>Population</th>
+                        <th>Residents</th>
+                    </tr>
+                </thead>
+                <tbody id='planet-table-body'>
+                </tbody>
+            </table>
+        
+        </div>
+        <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <li id='next' class="nav-item">    
+                </li>
+                <li id='previous' class="nav-item">
+                </li>
+                </li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+    
